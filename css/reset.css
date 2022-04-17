@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+/* 웹폰트 CSS */
+@font-face {
+    font-family: 'SBAggroL';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroL.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SBAggroM';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroM.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SBAggroB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+ 
+/* CSS 초기화 */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video{
+margin:0;
+padding:0;
+border:0;
+outline:0;
+font-size:100%;
+vertical-align:baseline;
+background:transparent;
+}
+
+html {font-size: 0.625em;}
+
+
+body{
+font-family:'SBAggroL';
+line-height:1;
+background: #eee;
+}
+
+article,aside,details,figcaption,figure, footer,header,hgroup,menu,nav,section{
+display:block;
+}
+
+ul, ol{
+list-style:none;
+}
+
+a{
+margin:0;
+padding:0;
+font-size:100%;
+vertical-align:baseline;
+background:transparent;
+text-decoration:none;
+color:#000;
+}
+
+* {margin: 0; padding: 0; box-sizing:border-box;}
+
+img{vertical-align:top;border:none}
+
+.blind {position: absolute;top: -9999px; left: -9999px; overflow:hidden;}
+
+.clear:after {content: ""; display: block; clear: both;}
+
+h1 {margin: 0;}
+
+button {border: none; background: none; text-indent: -9999px; cursor: pointer;}
