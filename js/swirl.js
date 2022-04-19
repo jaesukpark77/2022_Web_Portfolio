@@ -150,7 +150,7 @@ function createCanvas() {
 }
 
 function resize() {
-	const { innerWidth, innerHeight } = window;
+	let { innerWidth, innerHeight } = window;
 	
 	canvas.a.width = innerWidth;
   canvas.a.height = innerHeight;
