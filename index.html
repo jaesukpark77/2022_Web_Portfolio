@@ -4,35 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
-    <title>Welcom to BMW</title>
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
-    <link rel="stylesheet" type="text/css" href="css/swirl_demo.css" />
-    <script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
-
+    <title>Welcom to BMW</title>
+    <script src="https://kit.fontawesome.com/f273246008.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="wrap">
         <header class="header">
-            <h1><a href="index.html"><img src="img/s_image/bmw_logo_w.png" alt="BMW"></a></h1>
-            <button type="button" class="navBtn mobile"><span>메뉴</span></button>                
-            <nav class="nav">
-                <h2 class="blind">mainmenu</h2>
-                <button type="button" class="clicked_navBtn mobile"><span>메뉴</span></button>                
-                <ul class="gnb clicked">
+            <h2 class="blind">navbar</h2>
+            <nav class="navbar">
+                <div class="navbar__logo">
+                    <h1><a href="index.html"><img src="img/s_image/bmw_logo_w.png" alt="BMW"></a></h1>
+                </div>
+                <ul class="navbar_menu clear">
                     <li><a href="#">Company</a></li>
                     <li><a href="#">Model</a></li>
                     <li><a href="#">Service</a></li>
                     <li><a href="#">Media</a></li>
                 </ul>
-                <ul class="gnb pc">
-                    <li><a href="#">Company</a></li>
-                    <li><a href="#">Model</a></li>
-                    <li><a href="#">Service</a></li>
-                    <li><a href="#">Media</a></li>
-                </ul>
+                <div class="login pc"><a href="#">login</a></div>
+                <a href="#" class="navbar_toogleBtn">
+                    <button type="button" class="navBtn mobile"><span>메뉴</span></button>
+                </a>
             </nav>
-            <div class="login pc"><a href="#">login</a></div>
         </header>
         <!-- header -->
         <main>
@@ -100,7 +97,7 @@
                     <div class="discover_slider_ix">
                         <div class="discover_info">
                             <div class="discover_info_text">
-                                <p>일렉트로 모빌리티의 미래<br>THE iX</p>
+                                <p>일렉트로 모빌리티의 미래<br><span>THE iX</span></p>
                             </div>
                         </div>
                         <a href="#">내 차량 만들기</a>
@@ -108,19 +105,22 @@
                     <div class="discover_slider_i4">
                         <div class="discover_info">
                             <div class="discover_info_text">
-                                <p>최초의 순수전기 그란쿠페<br>THE i4</p>
+                                <p>최초의 순수전기 그란쿠페<br><span>THE i4</span></p>
                             </div>
                         </div>
                         <a href="#">내 차량 만들기</a>
                     </div>
                 </div>
-                <button class="prev_btn">이전 버튼</button><button class="next_btn">다음 버튼</button>
+                <div class="discover_btn">
+                    <button class="prevArrow">이전 버튼</button>
+                    <button class="nextArrow">다음 버튼</button>
+                </div>
             </section>
             <!-- discover section -->
             <section class="use">
                 <h2 class="blind">section05_BMW_use</h2>
-                <div class="content_use">
-                    <p class="content_use_title">Why Use<br>BMW?</p>
+                <div class="content_u">
+                    <p class="content_u_title">Why Use<br>BMW?</p>
                 </div>
                 <div class="use_list">
                     <div class="use_rect">
@@ -136,6 +136,10 @@
                         <a href="#"><p>BMW<br>VANTAGE</p><span>바로가기</span></a>
                     </div>
                 </div>
+                <div class="use_btn">
+                    <button class="use_prevArrow mobile">이전 버튼</button>
+                    <button class="use_nextArrow mobile">다음 버튼</button>
+                </div>
             </section>
             <!-- use section -->
         </main>
@@ -144,32 +148,34 @@
             <div class="footer_all">
                 <div class="footer_top">
                     <div class="logo_footer"><a href="index.html"><img src="img/s_image/bmw_logo_g.png" alt="bmw_logo"></a></div>
-                    <div class="bmw">BMW Korea 2022</p></div>
-                    <div class="footer_list">
-                        <p>회사소개<br>전체모델<br>전시장 안내<br>서비스안내</p>
-                        <ul class="bmw_liist pc">
-                            <li><a href="#">회사소개</a>
-                                <ul>
-                                    <li><a href="#">회사소개</a></li>
-                                    <li><a href="#">BMW 컨택트</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">전체모델</a></li>
-                            <li><a href="#">전시장 안내</a>
-                                <ul>
-                                    <li><a href="#">전시장 안내</a></li>
-                                    <li><a href="#">영업사원 안내</a></li>
-                                    <li><a href="#">차량상담신청</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">서비스 안내</a>
-                                <ul>
-                                    <li><a href="#">서비스 센터 안내</a></li>
-                                    <li><a href="#">고객지원센터</a></li>
-                                    <li><a href="#">시스템설정</a></li>
-                                </ul>
-                            </li>
-                        </ul>
+                    <div class="footer_text">
+                        <div class="bmw mobile">BMW Korea 2022</p></div>
+                        <div class="bmw pc">BMW Korea<br>2022</p></div>
+                        <div class="footer_list">
+                            <ul class="bmw_list clear">
+                                <li><a href="#">회사소개</a>
+                                    <ul class="sub_list pc clear">
+                                        <li><a href="#">회사소개</a></li>
+                                        <li><a href="#">BMW 컨택트</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">전체모델</a></li>
+                                <li><a href="#">전시장 안내</a>
+                                    <ul class="sub_list pc clear">
+                                        <li><a href="#">전시장 안내</a></li>
+                                        <li><a href="#">영업사원 안내</a></li>
+                                        <li><a href="#">차량상담신청</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">서비스 안내</a>
+                                    <ul class="sub_list pc clear">
+                                        <li><a href="#">서비스 센터 안내</a></li>
+                                        <li><a href="#">고객지원센터</a></li>
+                                        <li><a href="#">시스템설정</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="footer_bottom">
@@ -184,8 +190,14 @@
         </footer>
         <!-- footer -->
     </div>
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
     <script src="js/noise.min.js"></script>
     <script src="js/util.js"></script>
     <script src="js/swirl.js"></script>
+    <script>
+        
+    </script>
 </body>
 </html>
