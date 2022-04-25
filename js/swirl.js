@@ -1,20 +1,20 @@
 'use strict';
 
-const particleCount = 800;
-const particlePropCount = 12;
+const particleCount = 700;
+const particlePropCount = 9;
 const particlePropsLength = particleCount * particlePropCount;
-const rangeY = 355;
-const baseTTL = 70;
-const rangeTTL = 280;
-const baseSpeed = 0.1;
-const rangeSpeed = 1;
+const rangeY = 400;
+const baseTTL = 60;
+const rangeTTL = 100;
+const baseSpeed = 0.01;
+const rangeSpeed = 0.01;
 const baseRadius = 1;
-const rangeRadius = 3;
-const baseHue = 280;
-const rangeHue = 180;
+const rangeRadius = 2;
+const baseHue = 230;
+const rangeHue = 150;
 const noiseSteps = 8;
-const xOff = 0.003;
-const yOff = 0.003;
+const xOff = 0.001;
+const yOff = 0.001;
 const zOff = 0.001;
 const backgroundColor = '#000';
 
