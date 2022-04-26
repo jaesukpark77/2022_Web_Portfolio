@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <title>Welcom to BMW</title>
-    <script src="https://kit.fontawesome.com/f273246008.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
 </head>
 <body>
     <div id="wrap">
@@ -20,7 +20,7 @@
                     <h1><a href="index.html"><img src="img/s_image/bmw_logo_w.png" alt="BMW"></a></h1>
                 </div>
                 <ul class="navbar_menu clear">
-                    <li><a href="#">Company</a></li>
+                    <li><a href="company.html">Company</a></li>
                     <li><a href="#">Model</a></li>
                     <li><a href="#">Service</a></li>
                     <li><a href="#">Media</a></li>
@@ -34,11 +34,13 @@
         <!-- header -->
         <main>
             <section class="intro">
-                <div class="welcome"></div>
                 <h2 class="blind">section01_welcome</h2>
+                <div class="welcome"></div>
                 <div class="visual">
                     <div class="welcomeInfo">
-                        <p>WELCOME<br>TO BMW</p>
+                        <div class="textWelcome_p">
+                            <p class="textWelcome_c">WELCOME<br>TO BMW</p>
+                        </div>
                         <a href="#">내 차량 만들기</a>
                     </div>
                 </div>
@@ -79,10 +81,12 @@
                 <h2 class="blind">section04_BMW_discover</h2>
                 <div class="top_list">
                     <div class="text">
-                        <p>DISCOVER<br>MODELS</p>
+                        <p class="text_c">DISCOVER<br>MODELS</p>
                     </div>
                     <!-- left-side -->
-                    <div class="motion"></div>
+                    <div class="video">
+                        <iframe src="https://www.youtube.com/embed/Od5yC9qsu4Y?autoplay=1&controls=0&mute=1&loop=1&playlist=Od5yC9qsu4Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
                     <!-- right-side -->
                 </div>
                 <div class="discover_list">
