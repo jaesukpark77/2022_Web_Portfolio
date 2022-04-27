@@ -305,7 +305,6 @@ h1 img{
     }
 }
 
-
 .top_list .video{
     position: relative;
     width:100%;
@@ -507,7 +506,7 @@ svg{
 svg path {
     fill: transparent;
     stroke-dasharray: 250px;
-    animation: stroke 2s linear;
+    animation: stroke 2s linear infinite;
     animation-fill-mode: forwards;
 }
 
@@ -941,11 +940,6 @@ svg path:nth-child(10) {
         height: 302px;
     }
 
-    .content_u_title{
-        font-size:7rem;
-        line-height:90px;
-    }
-
     .content_u_title:after{
         width: 160px;
     }
@@ -1185,7 +1179,7 @@ svg path:nth-child(10) {
     }
 
     .top_list .text p{
-        font-size:9.3rem;
+        font-size:7.8rem;
         line-height:120px;
     }
     
@@ -1269,10 +1263,10 @@ svg path:nth-child(10) {
         text-align: center;
     }
 
-    .content_u_title{
-        font-size:7rem;
-        line-height:90px;
-    }
+    svg{
+        width: 80%;
+        height: 80%;
+    } 
 
     .content_u_title:after{
         width: 200px;
@@ -1453,7 +1447,7 @@ svg path:nth-child(10) {
     }
    
     .top_list .text p{
-        font-size:7.5rem;
+        font-size:7.3rem;
         line-height:120px;
     }
 
