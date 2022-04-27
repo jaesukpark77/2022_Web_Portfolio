@@ -26,6 +26,16 @@ $(function(){
         }
     });
 
+    // welcome_text
+    setInterval(function() {
+        $('.welcome_text span.past').removeClass('past');
+        $('.welcome_text span.active').addClass('past').removeClass('active');
+        $('.welcome_text span.past + span').addClass('active');
+        if ($('.welcome_text span.active').length == 0) {
+            $('.welcome_text span:nth-child(1)').addClass('active');
+        }
+    }, 1200);
+
     // list section
     $('.slider_list').slick({
         adaptiveHeight: true,
