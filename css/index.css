@@ -115,24 +115,46 @@ h1 img{
     z-index: 2; 
 }
 
-.textWelcome_p{
-    height: 12rem; /* 애니메이션 높이 */
-    overflow-y: hidden;
-    display: block;
-}
-
-.textWelcome_c{
+.welcome_text {
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    width: 100%;
     font-family: 'SBAggroB';
     font-size: 5rem;
-    line-height:1.2;
     color:#fff;
-    animation-name: grow;
-    animation-duration: 1s;/* 애니메이션 시간 */
 }
 
-@keyframes grow {
-    from { transform: translateY(13rem) }/* 애니메이션 높이 */
-    to { transform: translateY(0) }
+.welcome_text span {
+    position: absolute;
+    display: block;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    transform: perspective(100px) translateZ(10px);
+    filter: blur(10px);
+}
+
+.welcome_text span.active {
+    opacity: 1;
+    transform: perspective(100px) translateZ(0px);
+    filter: blur(0px);
+    letter-spacing: 0.15em;
+    transition: opacity 1000ms linear, transform 1000ms linear, filter 400ms linear, letter-spacing 1000ms linear;
+}
+
+.welcome_text span.past {
+    opacity: 0;
+    transform: perspective(100px) translateZ(-10px);
+    filter: blur(10px);
+    letter-spacing: 0.2em;
+    transition: opacity 1000ms linear, transform 1000ms linear, filter 400ms linear, letter-spacing 1000ms linear;
+}
+
+.make_car{
+    height:6rem;
+    /* overflow-y:hidden; */
+    /* position:relative; */
 }
 
 .welcomeInfo a{
@@ -144,7 +166,17 @@ h1 img{
     font-family:'SBAggroB';
     font-size: 2rem;
     line-height:54px;
-    margin-top:30px
+    margin-top:80px
+}
+
+.click_car{
+    animation-name: grow;
+    animation-duration: 1200ms;
+}
+
+@keyframes grow {
+    from { transform: translateY(6rem) }
+    to { transform: translateY(0) }
 }
 
 /* section_logo */
@@ -250,10 +282,11 @@ h1 img{
     transform: translate(-50%, -50%);
     font-family: 'SBAggroB';
     color:#fff;
-    font-size:5rem;
+    font-size:5.5rem;
     line-height:80px;
+    animation: neon1 1.5s ease-in-out infinite alternate;
 }
- 
+
 .top_list .text p:after{
     content: "";
     display: block;
@@ -261,6 +294,17 @@ h1 img{
     border-bottom: 2px solid #fff;
     margin: 5px auto;
 }
+
+@keyframes neon1 {
+    from {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #F2F2F2
+    }
+
+    to {
+        text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 4px #F2F2F2
+    }
+}
+
 
 .top_list .video{
     position: relative;
@@ -446,25 +490,88 @@ h1 img{
 	position: relative;
 }
 
-.content_u_title{
+.use_text{
     position:absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 	width: 100%;
     text-align:center;
-    font-family: 'SBAggroB';
-    color:#fff;
-    font-size:5.5rem;
-    line-height:80px;
 }
 
-.content_u_title:after{
+svg{
+    width: 60%;
+    height: 60%;
+}
+
+svg path {
+    fill: transparent;
+    stroke-dasharray: 250px;
+    animation: stroke 2s linear;
+    animation-fill-mode: forwards;
+}
+
+svg path:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+svg path:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+svg path:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+svg path:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+svg path:nth-child(5) {
+    animation-delay: 1s;
+}
+
+svg path:nth-child(6) {
+    animation-delay: 1.2s;
+}
+
+svg path:nth-child(7) {
+    animation-delay: 1.4s;
+}
+
+svg path:nth-child(8) {
+    animation-delay: 1.6s;
+}
+
+svg path:nth-child(9) {
+    animation-delay: 1.8s;
+}
+
+svg path:nth-child(10) {
+    animation-delay: 2.0s;
+}
+
+@keyframes stroke {
+    0% {
+        stroke: #FFF;
+        stroke-width: 3px;
+        stroke-dashoffset: 326px;
+    }
+
+    100% {
+        fill: #FFF;
+        stroke-dashoffset: 0px;
+    }
+}
+
+
+.use_text:after{
     content: "";
     display: block;
     width: 120px;
     border-bottom: 2px solid #fff;
-    margin: 5px auto;
+    margin: 0px auto;
+    padding-top:20px;;
 }
 
 .use_list{
@@ -663,28 +770,11 @@ h1 img{
     }
 
     .visual .welcomeInfo{
-        top:50%;
-        transform:translateY(-30%);
+        top:380px;
     } 
     
-    .textWelcome_p{
-        height: 22rem; /* 애니메이션 높이 */
-        overflow-y: hidden;
-        display: block;
-    }
-    
-    .textWelcome_c{
-        font-family: 'SBAggroB';
+    .welcome_text {
         font-size: 10rem;
-        line-height:1.2;
-        color:#fff;
-        animation-name: grow;
-        animation-duration: 1s;/* 애니메이션 시간 */
-    }
-    
-    @keyframes grow {
-        from { transform: translateY(22rem) }/* 애니메이션 높이 */
-        to { transform: translateY(0) }
     }
     
     .welcomeInfo a{
@@ -692,7 +782,7 @@ h1 img{
         height:90px;
         font-size: 3rem;
         line-height:100px;
-        margin-top:100px;
+        margin-top:170px;
     }
 
     .welcomeInfo a:hover{
@@ -749,7 +839,10 @@ h1 img{
 
     .top_list .text{
         height:300px;
-        font-size:7rem;
+    }
+    
+    .top_list .text p{
+        font-size:7.5rem;
         line-height:90px;
     }
     
@@ -1009,30 +1102,17 @@ h1 img{
     }
     /* section01_welcome CSS */
     .visual .welcomeInfo{
-        top:50%;
-        transform:translateY(-30%);
+        top:350px;
+    } 
+    
+    .welcome_text {
+        font-size: 15rem;
     }
 
-    .textWelcome_p{
-        height: 28rem; /* 애니메이션 높이 */
-        overflow-y: hidden;
-        display: block;
+    .make_car{
+        height:9rem;
+        /* overflow:hidden; */
     }
-    
-    .textWelcome_c{
-        font-family: 'SBAggroB';
-        font-size: 12rem;
-        line-height:1.2;
-        color:#fff;
-        animation-name: grow;
-        animation-duration: 1s;/* 애니메이션 시간 */
-    }
-    
-    @keyframes grow {
-        from { transform: translateY(28rem) }/* 애니메이션 높이 */
-        to { transform: translateY(0) }
-    }
-    
 
     .welcomeInfo a{
         width:280px;
@@ -1040,7 +1120,17 @@ h1 img{
         border-radius:45px;
         font-size: 3rem;
         line-height:100px;
-        margin-top:50px;
+        margin-top:200px;
+    }
+
+    .click_car{
+        animation-name: grow;
+        animation-duration: 1200ms;
+    }
+    
+    @keyframes grow {
+        from { transform: translateY(9rem) }
+        to { transform: translateY(0) }
     }
 
     .welcomeInfo a:hover{
@@ -1092,13 +1182,11 @@ h1 img{
     .top_list .text{
         width:50%;
         height:970px;
-        background:#000;
-        text-align:center;
-        font-family: 'SBAggroB';
-        color:#fff;
-        font-size:7rem;
-        line-height:90px;
-        position: relative;
+    }
+
+    .top_list .text p{
+        font-size:9.3rem;
+        line-height:120px;
     }
     
     .top_list .text p:after{
@@ -1339,12 +1427,11 @@ h1 img{
 
     /* section01_welcome CSS */
     .visual .welcomeInfo{
-        top:50%;
-        transform:translateY(-40%);
+        top:350px;
     }
 
     .welcomeInfo a{
-        margin-top:20px;
+        margin-top:200px;
     }
 
     /* section_logo */
@@ -1363,11 +1450,13 @@ h1 img{
     .top_list .text{
         width:36.458%;
         height:970px;
-        background:#000;
-        font-size:7.5rem;
-        line-height:100px;
     }
    
+    .top_list .text p{
+        font-size:7.5rem;
+        line-height:120px;
+    }
+
     .top_list .text p:after{
         width: 300px;
         border-bottom: 2px solid #fff;
@@ -1406,7 +1495,7 @@ h1 img{
 
     .content_u_title{
         font-size:11rem;
-        line-height:130px;
+        line-height:150px;
     }
 
     .use_list{
