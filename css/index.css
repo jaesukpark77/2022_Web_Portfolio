@@ -21,6 +21,7 @@ audio,canvas{display:inline-block;}
     overflow-x:hidden;
 }
 
+/* header part - 공통 */
 .navbar{
     width:100%;
     display:flex;
@@ -75,6 +76,7 @@ h1 img{
 	height: 2px; margin: 6px 0; border-radius: 5px;
 	background: #fff;
 }
+
 .navBtn:before, .navBtn:after {
 	content: "";
 	display: block;
@@ -92,7 +94,8 @@ h1 img{
     display:none;
 }
 
-/* section01_welcome CSS */
+/* index.html */
+/* index.html - section01_welcome CSS */
 .intro{
     position: relative;
     width:100%;;
@@ -179,7 +182,7 @@ h1 img{
     to { transform: translateY(0) }
 }
 
-/* section_logo */
+/* index.html - section_logo */
 .content {
 	width: 100%;
 	height: 355px;
@@ -206,7 +209,7 @@ h1 img{
     background:url('../img/s_image/bmw_logo_w.png') center/contain no-repeat;
 }
 
-/* section list */
+/* index.html - section list */
 .list{
     width:100%;
     height:323px;
@@ -254,7 +257,7 @@ h1 img{
     line-height: 80px;
 }
 
-/* section discover */
+/* index.html - section discover */
 .discover{
     width:100%;
     background:#000;
@@ -321,7 +324,7 @@ h1 img{
     height: 100%;
 }
 
-/* discover_list */
+/* index.html - discover_list */
 .discover_list{
     width:100%;
 }
@@ -476,7 +479,7 @@ h1 img{
     margin-left:27px;
 }
 
-/* section use */
+/* index.html - section use */
 .use{
     width:100%;
     background:#0867b0;
@@ -556,13 +559,11 @@ svg path:nth-child(10) {
         stroke-width: 3px;
         stroke-dashoffset: 326px;
     }
-
     100% {
         fill: #FFF;
         stroke-dashoffset: 0px;
     }
 }
-
 
 .use_text:after{
     content: "";
@@ -654,7 +655,7 @@ svg path:nth-child(10) {
     margin-left:27px;
 }
 
-/* footer */
+/* footer - 공통 */
 .footer{
     width:100%;
     display:flex;
@@ -733,6 +734,239 @@ svg path:nth-child(10) {
 .footer_bottom .sns a:nth-child(4) {
 	background-image: url(../img/s_image/youtube_icon.png);
     margin-right:0;
+}
+
+/* company.html */
+.intro_company{
+    width: 100%;
+}
+
+.bmw_intro{
+    height:455px;
+    background:url('../img/p_image/company/section1_bg.png') center/cover no-repeat;
+}
+
+.intro_text{
+    width: 100%;
+    text-align: center;
+    padding-top:142px;
+}
+
+.intro_text h2{
+    font-family: 'SBAggroB';
+    font-size:5rem;
+    color:#fff;
+}
+
+.intro_text span{
+    font-size:3rem;
+    line-height:35px;
+}
+
+.intro_text:after{
+    content: "";
+    display: block;
+    width: 105px;
+    border-bottom: 2px solid #fff;
+    margin: 0px auto;
+    padding-top:10px;
+}
+
+.bmw_intro p{
+    width:305px;
+    margin: 40px auto;
+    font-family: 'SBAggroL';
+    color:#fff;
+    font-size:1.7rem;
+    line-height:28px;
+    text-align: center;
+}
+/* company.html - intro section */
+
+.korea, .social, .vision, .finance{
+    width: 100%;
+    height:570px;
+}
+
+.korea, .vision{
+    background:#fff;
+}
+
+.social, .finance{
+    background:#000;
+}
+
+.text_part_l, .text_part_r{
+    width: 100%;
+    height:235px;
+    position:relative;
+}
+
+.text_part_l h2, .text_part_r h2{
+    font-family: 'SBAggroB';
+    font-size:8rem;
+    text-align: center;
+    line-height:64px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+
+.text_part_l h2{
+    color:#000;
+}
+
+.text_part_r h2{
+    color:#fff;
+}
+
+.text_part_l h2:after{
+    content: "";
+    display: block;
+    width: 130px;
+    border-bottom: 2px solid #000;
+    margin: 0px auto;
+}
+
+.vision .text_part_l h2:after{
+    width: 60px;
+}
+
+.text_part_r h2:after{
+    content: "";
+    display: block;
+    width: 130px;
+    border-bottom: 2px solid #fff;
+    margin: 0px auto;
+}
+
+.text_part_l span, .text_part_r span{
+    font-size:4rem;
+}
+
+.list_part_r, .list_part_l{
+    width: 100%;
+    height:335px;
+}
+
+.list_part_r{
+    background:#0867b0;
+    border-radius:57px;
+    padding-top:50px;
+}
+
+.list_part_l{
+    background:#f2f2f2;
+    border-radius:57px;
+    padding-top:50px;
+}
+
+.korea .list_img{
+    width:85.333%;
+    height:160px;
+    background:url('../img/p_image/company/section2_list_bg.png') center/cover no-repeat;
+    border-radius:20px;
+    margin:0 auto;
+}
+
+.social .list_img{
+    width:85.333%;
+    height:160px;
+    background:url('../img/p_image/company/section3_list_bg.png') center/cover no-repeat;
+    border-radius:20px;
+    margin:0 auto;
+}
+
+.vision .list_img{
+    width:85.333%;
+    height:160px;
+    background:url('../img/p_image/company/section4_list_bg.png') center/cover no-repeat;
+    border-radius:20px;
+    margin:0 auto;
+}
+
+.finance .list_img{
+    width:85.333%;
+    height:160px;
+    background:url('../img/p_image/company/section5_list_bg.png') center/cover no-repeat;
+    border-radius:20px;
+    margin:0 auto;
+}
+
+
+.list_part_r p, .list_part_l p{
+    width:85.333%;
+    margin:0 auto;
+    font-family: 'SBAggroL';
+    font-size:1.5rem;
+    line-height:24px;
+    text-align: center;
+    padding-top:35px;
+}
+
+.list_part_r p{
+    color:#fff;
+}
+/* company.html - bmw korea section ~ bmw finance section */
+
+.company_discover{
+    width: 100%;
+    height:558px;
+    padding: 50px 7.33% 30px;
+}
+
+.dis_img{
+    width:85.333%;
+    height: 155px;
+    border-radius:155px;
+    background:url('../img/p_image/company/section6_list_bg.png') 50% 30%/cover no-repeat;
+    margin:0 auto;
+    position:relative;
+    /* margin-bottom:40px; */
+}
+
+.dis_img p{
+    font-family: 'SBAggroB';
+    font-size:3.5rem;
+    color:#fff;
+    position:absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.dis_list{
+    width: 100%;
+    margin:0 auto;
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:space-around;
+}
+
+.list1{
+    width: 145px;
+    height:73px;
+    background:#fff;
+    border-radius:20px;
+    margin-top:40px;
+    position: relative;
+}
+
+.list1 a{
+    font-family: 'SBAggroL';
+    font-size:1.8rem;
+    line-height:25px;
+    color:#0867b0;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align:center;
+}
+
+.list1:nth-of-child(4) a{
+    font-size:1rem;
 }
 
 /* 태블릿용 CSS */
