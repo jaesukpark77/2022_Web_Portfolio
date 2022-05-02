@@ -13,7 +13,7 @@ const inner = document.querySelector(".logoBg");
 const section = document.querySelector(".logo_big");
 
 window.onscroll = function() {
-  let value = window.pageYOffset / section.offsetTop + 1;
+  let value = window.pageYOffset / section.offsetTop;
   inner.style.transform = `scale(${value})`;
 };
 
