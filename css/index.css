@@ -172,16 +172,6 @@ h1 img{
     margin-top:80px
 }
 
-.click_car{
-    animation-name: grow;
-    animation-duration: 1200ms;
-}
-
-@keyframes grow {
-    from { transform: translateY(6rem) }
-    to { transform: translateY(0) }
-}
-
 /* index.html - section_logo */
 .content {
 	width: 100%;
@@ -288,14 +278,6 @@ h1 img{
     font-size:5.5rem;
     line-height:80px;
     animation: neon1 1.5s ease-in-out infinite alternate;
-}
-
-.top_list .text p:after{
-    content: "";
-    display: block;
-    width: 140px;
-    border-bottom: 2px solid #fff;
-    margin: 5px auto;
 }
 
 @keyframes neon1 {
@@ -563,15 +545,6 @@ svg path:nth-child(10) {
         fill: #FFF;
         stroke-dashoffset: 0px;
     }
-}
-
-.use_text:after{
-    content: "";
-    display: block;
-    width: 120px;
-    border-bottom: 2px solid #fff;
-    margin: 0px auto;
-    padding-top:20px;;
 }
 
 .use_list{
@@ -1081,11 +1054,6 @@ svg path:nth-child(10) {
         line-height:90px;
     }
     
-    .top_list .text p:after{
-        width: 280px;
-        margin: 10px auto;
-    }
-
     .top_list .video{
         padding-top:68%;
     }
@@ -1173,10 +1141,6 @@ svg path:nth-child(10) {
     /* index.html - section use */
     .content_u{
         height: 302px;
-    }
-
-    .content_u_title:after{
-        width: 160px;
     }
 
     .use_list{
@@ -1305,6 +1269,7 @@ svg path:nth-child(10) {
     .text_part_l h2, .text_part_r h2{
         font-size:12rem;
         line-height:90px;
+        transform:translate(-50%, -40%);
     }
 
     .text_part_l span, .text_part_r span{
@@ -1368,6 +1333,7 @@ svg path:nth-child(10) {
         width:88.542%;
         height: 320px;
         background:url('../img/p_image/company/section6_list_bg.png') 50% -10%/cover no-repeat;
+        margin-bottom:30px;
     }
 
     .dis_img p{
@@ -1543,11 +1509,6 @@ svg path:nth-child(10) {
         line-height:120px;
     }
     
-    .top_list .text p:after{
-        width: 280px;
-        margin: 10px auto;
-    }
-
     .top_list .video{
         width:50%;
         height:100%;
@@ -1627,10 +1588,6 @@ svg path:nth-child(10) {
         width: 80%;
         height: 80%;
     } 
-
-    .content_u_title:after{
-        width: 200px;
-    }
 
     .use_list{
         width:58.496%;
@@ -1826,7 +1783,7 @@ svg path:nth-child(10) {
         text-align:left;
         position:absolute;
         top:50%;
-        left:3%;
+        left:10%;
         transform:translateY(-50%);
     }
 
@@ -1836,7 +1793,7 @@ svg path:nth-child(10) {
         text-align:right;
         position:absolute;
         top:50%;
-        right:3%;
+        right:10%;
         left:0%;
         transform:translateY(-50%);
     }
@@ -1865,7 +1822,7 @@ svg path:nth-child(10) {
 
     .korea .list_img, .social .list_img, .vision .list_img, .finance .list_img{
         width:89.655%;
-        height:320px;
+        height:350px;
     }
 
     .list_part_info_r, .list_part_info_l{
@@ -1873,7 +1830,7 @@ svg path:nth-child(10) {
         font-size:2.4rem;
         line-height:48px;
         text-align: left;
-        padding-top:70px;
+        padding-top:40px;
     }
     /* company.html - bmw korea section ~ bmw finance section */
 
@@ -1894,14 +1851,18 @@ svg path:nth-child(10) {
     .dis_img p{
         font-size:7rem;
     }
+
+    .dis_list{
+        width:93.361%;
+    }
     
     .list1{
-        width: 25.39%;
+        width: 26.239%;
         height:138px;
     }
 
     .list1 a{
-        font-size:3rem;
+        font-size:2.6rem;
         line-height:36px;
     }
 }
@@ -1950,11 +1911,6 @@ svg path:nth-child(10) {
         line-height:120px;
     }
 
-    .top_list .text p:after{
-        width: 300px;
-        border-bottom: 2px solid #fff;
-    }
-
     .top_list .video{
         width:63.542%;
         height:100%;
@@ -1986,11 +1942,6 @@ svg path:nth-child(10) {
         width: 50%;
     }
 
-    .content_u_title{
-        font-size:11rem;
-        line-height:150px;
-    }
-
     .use_list{
         width:50%;
     }
@@ -2015,12 +1966,13 @@ svg path:nth-child(10) {
     /* company.html - intro section */
     .text_part_l, .text_part_r{
         width: 50%;
+        position:relative;
     }
-
+    
     .list_part_r, .list_part_l{
         width: 50%;
     }
-
+    
     .text_part_l h2, .text_part_r h2{
         font-size:13rem;
         line-height:80px;
@@ -2033,7 +1985,8 @@ svg path:nth-child(10) {
     }
 
     .text_part_l span, .text_part_r span{
-        font-size:6.5rem;
+        font-size:6rem;
+        text-align:center;
     }
 
     .text_part_l h2:after{
@@ -2069,11 +2022,22 @@ svg path:nth-child(10) {
         width:100%;
         height: 400px;
         background:url('../img/p_image/company/section6_list_bg.png') 50% 30%/cover no-repeat;
-        margin-bottom:50px;
+        margin-bottom:20px;
     }
 
+    .dis_list{
+        width:86.363%;
+    }
+    
+
     .list1{
-        width: 26%;
-        height:138px;
+        width: 22.807%;
+        height:136px;
+        margin-top:60px;
+        margin-right:100px;
+    }
+
+    .list1:nth-of-type(3n){
+        margin-right:0px;
     }
 }
