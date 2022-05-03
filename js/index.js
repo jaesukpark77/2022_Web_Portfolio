@@ -18,6 +18,8 @@ window.onscroll = function() {
 };
 
 $(function(){
+    AOS.init();
+
     // nav section
     $(window).resize(function(){
         if($(window).width() >= 1024 ){
@@ -34,7 +36,7 @@ $(function(){
         if ($('.welcome_text span.active').length == 0) {
             $('.welcome_text span:nth-child(1)').addClass('active');
         }
-    }, 1200);
+    }, 1000);
 
     // list section
     $('.slider_list').slick({
@@ -123,6 +125,7 @@ $(function(){
             }
         ]
     });
+
     $('.use_list').slick({
         prevArrow:$('.use_prevArrow'),
         nextArrow:$('.use_nextArrow'),
