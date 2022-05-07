@@ -709,14 +709,19 @@ svg path:nth-child(10) {
     margin-right:0;
 }
 
-/* company.html */
-.intro_company{
+/* company.html + model.html */
+.intro_company, .intro_model{
     width: 100%;
 }
 
 .bmw_intro{
     height:455px;
     background:url('../img/p_image/company/section1_bg.png') center/cover no-repeat;
+}
+
+.ix_intro{
+    height:455px;
+    background:url('../img/p_image/model/section1_bg.png') center/cover no-repeat;
 }
 
 .intro_text{
@@ -742,7 +747,7 @@ svg path:nth-child(10) {
     width: 105px;
     border-bottom: 2px solid #fff;
     margin: 0px auto;
-    padding-top:10px;
+    padding-top:5px;
 }
 
 .pc_mid{
@@ -751,7 +756,7 @@ svg path:nth-child(10) {
 
 .intro_info{
     width:61%;
-    margin: 35px auto;
+    margin: 32px auto;
     font-family: 'SBAggroL';
     color:#fff;
     font-size:1.7rem;
@@ -981,6 +986,228 @@ canvas{
     left: 50%;
     transform: translate(-50%, -50%);
     text-align:center;
+}
+
+/* model.html */
+.recommend{
+    width: 100%;
+    background:#000;
+    padding-bottom:20px;;
+}
+
+.top_rec .text_rec{
+    width:100%;
+    height:220px;
+    background:#000;
+    text-align:center;
+    position: relative;
+}
+
+.top_rec .text_rec_t{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'SBAggroB';
+    color:#fff;
+    font-size:4.5rem;
+    line-height:80px;
+}
+
+.recommend_list{
+    width: 100%;
+}
+
+.recommend_slider_cope, .recommend_slider_sport, .recommend_slider_plus{
+    width:100%;
+    border-radius:36px;
+    background:#ffffff;
+    padding:0 0 25px;
+    text-align:center;
+    margin-left:20px;
+}
+
+.recommend_slider_cope .recommend_info{
+    width:88%;
+    padding-bottom:56.233%;
+    background:url('../img/p_image/model/sectoin2_list1.png') center/cover no-repeat;
+    border-radius:36px;
+    margin:28px auto;
+    position: relative;
+}
+
+.recommend_slider_sport .recommend_info{
+    width:88%;
+    padding-bottom:56.233%;
+    background:url('../img/p_image/model/sectoin2_list2.png') center/cover no-repeat;
+    border-radius:36px;
+    margin:28px auto;
+    position: relative;
+
+}
+
+.recommend_slider_plus .recommend_info{
+    width:88%;
+    padding-bottom:56.233%;
+    background:url('../img/p_image/model/sectoin2_list3.png') center/cover no-repeat;
+    border-radius:36px;
+    margin:28px auto;
+    position: relative;
+
+}
+
+.recommend_slider_cope a, .recommend_slider_sport a, .recommend_slider_plus a{
+    display: inline-block;
+	width: 180px; 
+    height: 35px;
+    border: none;
+	background:#f2f2f2;
+	color: #000; 
+    font-family: 'SBAggroM';
+    font-size: 1.8rem; 
+    line-height: 40px;
+    text-align:center;
+}
+
+.recommend_slider_cope a:hover, .recommend_slider_sport a:hover, .recommend_slider_plus a:hover{
+    color:#0867b0;
+}
+
+.recommend_info_text{
+    position:absolute;
+    text-align:center; 
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.recommend_info_text p{
+    display:block;
+    font-family: 'SBAggroM';
+    font-size:1.5rem;
+    color:#fff;
+    line-height:20px;
+}
+
+/* distance ~ design section */
+.distance, .speed, .iDrive, .assistance, .design{
+    width: 100%;
+    height:495px;
+}
+
+.distance, .iDrive, .design{
+    background:#fff;
+}
+
+.speed, .assistance{
+    background:#000;
+}
+
+.ix_text_part_l, .ix_text_part_r{
+    width: 100%;
+    height:160px;
+    position:relative;
+    z-index:1;
+}
+
+.ix_text_part_l h2, .ix_text_part_r h2{
+    font-family: 'SBAggroB';
+    font-size:4rem;
+    text-align: center;
+    line-height:50px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+
+.distance .ix_text_part_l h2, .ix_text_part_r h2{
+    font-size:3.5rem;
+    line-height:45px;
+}
+
+.ix_text_part_r h2{
+    font-size:3.5rem;
+    line-height:45px;
+}
+
+.ix_text_part_l h2{
+    color:#000;
+}
+
+.ix_text_part_r h2{
+    color:#fff;
+}
+
+.ix_list_part_r, .ix_list_part_l{
+    width: 100%;
+    height:335px;
+}
+
+.ix_list_part_r{
+    background:#0867b0;
+    border-radius:57px;
+    padding-top:40px;
+}
+
+.ix_list_part_l{
+    background:#f2f2f2;
+    border-radius:57px;
+    padding-top:30px;
+}
+
+.distance .ix_list_img{
+    width:85.333%;
+    height:160px;
+    background:url('../img/p_image/model/sectoin3_list.png') center/cover no-repeat;
+    border-radius:20px;
+    margin:0 auto;
+}
+
+.speed .ix_list_img{
+    width:85.333%;
+    height:160px;
+    background:url('../img/p_image/model/sectoin4_list.png') center/cover no-repeat;
+    border-radius:20px;
+    margin:0 auto;
+}
+
+.iDrive .ix_list_img{
+    width:85.333%;
+    height:160px;
+    background:url('../img/p_image/model/sectoin5_list.png') center/cover no-repeat;
+    border-radius:20px;
+    margin:0 auto;
+}
+
+.assistance .ix_list_img{
+    width:85.333%;
+    height:160px;
+    background:url('../img/p_image/model/sectoin6_list.png') center/cover no-repeat;
+    border-radius:20px;
+    margin:0 auto;
+}
+
+.design .ix_list_img{
+    width:85.333%;
+    height:160px;
+    background:url('../img/p_image/model/sectoin7_list.png') center/cover no-repeat;
+    border-radius:20px;
+    margin:0 auto;
+}
+
+.ix_list_part_info_r, .ix_list_part_info_l{
+    width:85.333%;
+    margin:0 auto;
+    font-family: 'SBAggroL';
+    font-size:1.4rem;
+    line-height:24px;
+    text-align: center;
+    padding-top:25px;
+}
+
+.ix_list_part_info_r{
+    color:#fff;
 }
 
 /* 태블릿용 CSS */
@@ -1263,7 +1490,7 @@ canvas{
     }
 
     /* company.html */
-    .bmw_intro{
+    .bmw_intro, .ix_intro{
         height: 910px;
     }
 
@@ -1415,6 +1642,75 @@ canvas{
         font-size:2.7rem;
         line-height:36px;
     }
+
+    /* model.html */
+    .top_rec .text_rec{
+        height:260px;
+    }
+
+    .top_rec .text_rec_t{
+        font-size:6rem;
+        line-height:90px;
+    }
+
+    .recommend_slider_cope, .recommend_slider_sport, .recommend_slider_plus{
+        padding:20px 0 20px;
+    }
+
+    .recommend_info{
+        width:91.146%;
+    }
+
+    .recommend_slider_cope a, .recommend_slider_sport a, .recommend_slider_plus a{
+        width: 300px; 
+        height: 50px;
+        font-size: 2.4rem; 
+        line-height: 55px;
+    }
+    
+    .recommend_info_text p{
+        font-size:2rem;
+        line-height:30px;
+    }
+
+    .distance, .speed, .iDrive, .assistance, .design{
+        height:946px;
+    }
+
+    .ix_text_part_l, .ix_text_part_r{
+        height:346px;
+    }
+
+    .ix_text_part_l h2, .ix_text_part_r h2{
+        font-size:7.4rem;
+        line-height:90px;
+        transform:translate(-50%, -50%);
+    }
+
+    .distance .ix_text_part_l h2{
+        font-size:6.4rem;
+        line-height:85px;
+    }
+
+    .ix_list_part_r, .ix_list_part_l{
+        height:600px;
+        padding-top:50px;
+    }
+    
+    .distance .ix_list_img, .speed .ix_list_img, .iDrive .ix_list_img, .assistance .ix_list_img, .design .ix_list_img{
+        width:92.188%;
+        height:320px;
+    }
+
+    .ix_list_part_info_r, .ix_list_part_info_l{
+        width:84.635%;
+        margin:0 auto;
+        font-family: 'SBAggroL';
+        font-size:1.7rem;
+        line-height:40px;
+        text-align: center;
+        padding-top:29px;
+    }
 }
 
 /* 1024 CSS */
@@ -1561,13 +1857,13 @@ canvas{
     /* discover top_list */
     .discover .top_list{
         width:100%;
-        height:970px;
+        height:600px;
         display:flex;
     }
 
     .top_list .text{
         width:50%;
-        height:970px;
+        height:600px;
     }
 
     .top_list .text p{
@@ -1578,7 +1874,7 @@ canvas{
     .top_list .video{
         width:50%;
         height:100%;
-        padding-top:80%;
+        padding-top:50%;
     }
 
     /* discover_list */
@@ -1790,7 +2086,7 @@ canvas{
     }
 
     /* company.html */
-    .bmw_intro{
+    .bmw_intro, .ix_intro{
         height:800px;
         padding:0px 3%;
     }
@@ -1958,6 +2254,97 @@ canvas{
         font-size:2.6rem;
         line-height:36px;
     }
+    /* model.html */
+    .top_rec .text_rec{
+        height:320px;
+    }
+
+    .top_rec .text_rec_t{
+        font-size:9rem;
+        line-height:120px;
+    }
+
+    .recommend_slider_cope, .recommend_slider_sport, .recommend_slider_plus{
+        padding:20px 0 20px;
+    }
+
+    .recommend_info{
+        width:91.146%;
+    }
+
+    .recommend_slider_cope a, .recommend_slider_sport a, .recommend_slider_plus a{
+        width: 250px; 
+        height: 50px;
+        font-size: 2rem; 
+        line-height: 55px;
+    }
+    
+    .recommend_info_text p{
+        font-size:1.8rem;
+        line-height:25px;
+    }
+
+    .distance, .speed, .iDrive, .assistance, .design{
+        height:915px;
+    }
+
+    
+    .ix_total_list_l, .ix_total_list_r{
+        display:flex;
+    }
+
+    .ix_total_list_r{
+        flex-direction:row-reverse;
+    }
+
+    .ix_text_part_l, .ix_text_part_r{
+        width: 43.36%;
+        height:915px;
+    }
+
+    .ix_list_part_r, .ix_list_part_l{
+        width: 56.64%;
+        height:915px;
+    }
+
+    .ix_text_part_l h2{
+        font-size:7.7rem;
+        line-height:100px;
+        text-align:left;
+        position:absolute;
+        top:50%;
+        left:10%;
+        transform:translateY(-50%);
+    }
+
+    .ix_text_part_r h2{
+        font-size:7.8rem;
+        line-height:100px;
+        text-align:right;
+        position:absolute;
+        top:50%;
+        right:10%;
+        left:0%;
+        transform:translateY(-50%);
+    }
+
+    .distance .ix_text_part_l h2{
+        font-size:6.7rem;
+        line-height:90px;
+    }
+    
+    .distance .ix_list_img, .speed .ix_list_img, .iDrive .ix_list_img, .assistance .ix_list_img, .design .ix_list_img{
+        width:89.655%;
+        height:350px;
+    }
+
+    .ix_list_part_info_r, .ix_list_part_info_l{
+        width:89.655%;
+        font-size:2.4rem;
+        line-height:48px;
+        text-align: left;
+        padding-top:40px;
+    }
 }
 
 /* PC */
@@ -1994,11 +2381,15 @@ canvas{
 
     /* section discover */
     /* discover top_list */
+    .discover .top_list{
+        height:970px;
+    }
+
     .top_list .text{
         width:36.458%;
         height:970px;
     }
-   
+
     .top_list .text p{
         font-size:7.3rem;
         line-height:120px;
@@ -2052,7 +2443,7 @@ canvas{
     }
 
     /* company.html */
-    .bmw_intro{
+    .bmw_intro, .ix_intro{
         padding:0px 15.625%;
     }
 
@@ -2146,7 +2537,6 @@ canvas{
         width:86.363%;
     }
     
-
     .list1{
         width: 22.807%;
         height:136px;
@@ -2156,5 +2546,41 @@ canvas{
 
     .list1:nth-of-type(3n){
         margin-right:0px;
+    }
+
+    .ix_text_part_l, .ix_text_part_r{
+        width: 50%;
+        position:relative;
+    }
+    
+    .ix_list_part_r, .ix_list_part_l{
+        width: 50%;
+    }
+    
+    .ix_text_part_l h2, .ix_text_part_r h2{
+        width: 100%;
+        font-size:12rem;
+        line-height:130px;
+        text-align:center;
+        position:absolute;
+        top:50%;
+        left:50%;
+        right:0%;
+        transform:translate(-50%, -50%);
+    }
+
+    .distance .ix_text_part_l h2{
+        width: 100%;
+        font-size:10.8rem;
+        line-height:120px;
+    }
+
+    .distance .ix_list_img, .speed .ix_list_img, .iDrive .ix_list_img, .assistance .ix_list_img, .design .ix_list_img{
+        width:86.458%;
+        height:420px;
+    }
+
+    .ix_list_part_info_r, .ix_list_part_info_l{
+        width:86.458%;
     }
 }
