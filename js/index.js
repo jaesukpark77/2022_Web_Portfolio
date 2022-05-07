@@ -171,4 +171,48 @@ $(function(){
             }
         ]
     });
+
+    $('.recommend_list').slick({
+        adaptiveHeight: false,
+        infinite : true,
+        slidesToShow : 2, 
+        slidesToScroll : 1,
+        autoplay : true,
+        speed : 1000,
+        autoplaySpeed : 1000,
+        pauseOnHover : true,
+        draggable : true,
+        centerMode: true,
+        responsive: [
+        {  
+                breakpoint: 1024,
+                settings: {
+                    adaptiveHeight: false,
+                    infinite : true,
+                    slidesToShow : 1, 
+                    slidesToScroll : 1,
+                    autoplay : true,
+                    speed : 1000,
+                    autoplaySpeed : 1000,
+                    pauseOnHover : true,
+                    draggable : true,
+                } 
+            },
+            { 
+                breakpoint: 768, 
+                settings: {
+                    adaptiveHeight: false,
+                    infinite : true,
+                    slidesToShow : 1, 
+                    slidesToScroll : 1,
+                    autoplay : true,
+                    speed : 1000,
+                    autoplaySpeed : 1000,
+                    pauseOnHover : true,
+                    draggable : true
+                } 
+            }
+        ]
+    });
+    
 })
