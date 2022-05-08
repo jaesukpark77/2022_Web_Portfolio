@@ -782,7 +782,7 @@ canvas{
     display:block;
 }
 
-#particles-js, #particles-js3{
+#particles-js, #particles-js3, #particles-js5{
     width:100%;
     height:235px;
     background-color: #ffffff;
@@ -998,7 +998,6 @@ canvas{
 .top_rec .text_rec{
     width:100%;
     height:220px;
-    background:#000;
     text-align:center;
     position: relative;
 }
@@ -1012,6 +1011,18 @@ canvas{
     color:#fff;
     font-size:4.5rem;
     line-height:80px;
+    z-index:2000;
+}
+
+#canvas{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+}
+.canvas-wrap{
+    position:relative;
 }
 
 .recommend_list{
@@ -1208,6 +1219,30 @@ canvas{
 
 .ix_list_part_info_r{
     color:#fff;
+}
+
+#particles-js-m, #particles-js-m3, #particles-js-m5{
+    width:100%;
+    height:160px;
+    background-color: #ffffff;
+    background-image: url('');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index:0;
+}
+
+#particles-js-m2, #particles-js-m4{
+    width:100%;
+    height:160px;
+    background-color: #000;
+    background-image: url('');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index:0;
 }
 
 /* 태블릿용 CSS */
@@ -1528,7 +1563,7 @@ canvas{
         height:946px;
     }
 
-    #particles-js, #particles-js3{
+    #particles-js, #particles-js3, #particles-js5{
         width:100%;
         height:346px;
         background-color: #ffffff;
@@ -1710,6 +1745,14 @@ canvas{
         line-height:40px;
         text-align: center;
         padding-top:29px;
+    }
+
+    #particles-js-m, #particles-js-m3, #particles-js-m5{
+        height:346px;
+    }
+    
+    #particles-js-m2, #particles-js-m4{
+        height:346px;
     }
 }
 
@@ -2129,7 +2172,7 @@ canvas{
         flex-direction:row-reverse;
     }
 
-    #particles-js, #particles-js3{
+    #particles-js, #particles-js3, #particles-js5{
         width:43.36%;
         height:915px;
         background-color: #ffffff;
@@ -2345,6 +2388,16 @@ canvas{
         text-align: left;
         padding-top:40px;
     }
+
+    #particles-js-m, #particles-js-m3, #particles-js-m5{
+        width:43.36%;
+        height:915px;
+    } 
+
+    #particles-js-m2, #particles-js-m4{
+            width:43.36%;
+            height:915px;
+    }
 }
 
 /* PC */
@@ -2448,7 +2501,7 @@ canvas{
     }
 
     /* company.html - intro section */
-    #particles-js, #particles-js3{
+    #particles-js, #particles-js3, #particles-js5{
         width:50%;
         height:915px;
         background-color: #ffffff;
@@ -2582,5 +2635,15 @@ canvas{
 
     .ix_list_part_info_r, .ix_list_part_info_l{
         width:86.458%;
+    }
+
+    #particles-js-m, #particles-js-m3, #particles-js-m5{
+        width:50%;
+        height:915px;
+    } 
+
+    #particles-js-m2, #particles-js-m4{
+        width:50%;
+        height:915px;
     }
 }
