@@ -710,6 +710,10 @@ svg path:nth-child(10) {
 }
 
 /* company.html + model.html */
+.wrap{
+    overflow:hidden;
+}
+
 .intro_company, .intro_model{
     width: 100%;
 }
